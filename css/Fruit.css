@@ -1,0 +1,365 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --first-color: hsl(140, 40%, 48%);
+  --title-color: hsl(140, 4%, 12%);
+  --text-color: hsl(140, 4%, 40%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 95%);
+  --shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .2));
+  --filter-img: invert(1);
+}
+/*=============== Commun Proprities ===============*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  "Poppins", sans-serif;
+    background-color: var(--body-color);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Cherry Bomb One", cursive;
+    color: var(--title-color);
+}
+.logo{
+    height: 40px;
+}
+::placeholder,
+p{
+    color: var(--text-color);
+}
+.btn{
+    background-color: var(--first-color);
+    padding: .7rem 1.25rem;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: var(--first-color);
+    box-shadow: 0 8px 24px #49ab6a4d;
+}
+.bg{
+    background-color: var(--container-color);
+    transform:  translate(-50%,-50%) skew(4deg);
+    border-radius: 15px;
+}
+.box img{
+    transition: .4s;
+}
+.box:hover img{
+    transform: translateY(-10px);
+}
+.branch-1,
+.branch-2,
+.branch-3{
+    filter: var(--filter-img);
+}
+.home .main img,
+.about .main img{
+    filter: var(--shadow-img);
+}
+/* <!--==================== NavBar ====================--> */
+.navbar{
+    background-color: var(--body-color);
+}
+.navbar i,
+.navbar .nav-link{
+    color: var(--title-color);
+}
+.navbar .nav-link:hover{
+    color: var(--first-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    transition: .4s;
+    background-color: transparent;
+    color: var(--first-color);
+    transform: scale(1.1);
+}
+.navbar .navbar-nav .branch-1{
+    height: 170px;
+    width: 170px;
+    top: 1rem;
+    left: -3rem;
+    transform: rotateZ(180deg);
+}
+.navbar .navbar-nav .branch-2{
+    height: 50px;
+    width: 50px;
+    bottom: 2rem;
+    right: 5rem;
+}
+/* <!--==================== Home ====================--> */
+.home h1{
+    font-size: 4.2rem;
+}
+.home img{
+    height: 480px;
+}
+.home .branch-1{
+    width: 55px;
+    height: 55px;
+    top: 13rem;
+    left: 22rem;
+}
+.home .branch-2{
+    width: 130px;
+    height: 130px;
+    right: -2rem;
+    bottom: 5rem;
+}
+/* <!--================= about ==================--> */
+.about img{
+    height: 350PX;
+}
+.about h1{
+    font-size: 3.5rem;
+}
+.about .branch-1{
+    width: 45px;
+    height: 45px;
+    bottom: 5rem;
+    right: 15rem;
+}
+.about .branch-2{
+    width: 110px;
+    height: 110px;
+    left: -2rem;
+    bottom: 5rem;
+    transform:rotate(90deg);
+}
+/* <!--================= popular ==================--> */
+.popular .bg{
+    transform:  translate(-50%,-40%) skew(4deg);
+}
+.popular .box button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--first-color);
+}
+.popular article span{
+    color: var(--title-color);
+}
+/* <!--================= JOIN US ==================--> */
+.join .container{
+    border-radius: 55px;
+}
+.join .container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+.join h1{
+    font-size: 3.5rem;
+}
+.join p{
+    width: 40%;
+}
+.join input{
+    outline: none;
+    color: var(--title-color);
+    background-color: var(--body-color);
+}
+.join form{
+    background-color: var(--body-color);
+    width: 50%;
+}
+.join .leaf-1{
+    width: 70px;
+    top: 2rem;
+    left: 15rem;
+    transform: rotate(140deg);
+}
+.join .leaf-2{
+    width: 70px;
+    bottom: 2rem;
+    right: 15rem;
+    transform: rotate(20deg);
+}
+/* < ========== FOOTER ======= > */
+footer li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+footer li a:hover{
+    text-decoration: underline;
+}
+footer span{
+    color: var(--title-color);
+}
+footer .branch-1{
+    width: 60px;
+    height: 60px;
+    bottom: 3.5rem;
+    right: 27rem;
+}
+footer .branch-2{
+    width: 130px;
+    height: 130px;
+    transform: rotate(-90deg);
+    top:6rem;
+    right:-1.5rem;
+}
+footer .branch-3{
+    width: 150px;
+    height: 150px;
+    left: 12rem;
+    bottom: -2.5rem;
+    transform: rotate(90deg);
+}
+/* < ============== Button Scroll Up ============ > */
+#btnScroll{
+    color: var(--title-color);
+    background-color: var(--body-color);
+    bottom: -100%;
+    transition: .4s;
+    box-shadow: 0 2px 80px var(--text-color);
+}
+#btnScroll:hover{
+    transform: translateY(-.3rem);
+}
+/* < ============== Drak Theme ============ > */
+body.dark_Theme{
+    --title-color: hsl(140, 4%, 90%);
+    --text-color: hsl(140, 4%, 70%);
+    --body-color: hsl(0, 0%, 10%);
+    --container-color: hsl(0, 0%, 14%);
+    --shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .6));
+    --filter-img: initial;
+}
+/* < ============= Meduia Queries ========== > */
+/* --- Extra Small device --- */
+@media screen and (width <= 576px) {
+    .navbar-nav{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height:60vh;
+        transition: .3s;
+        background-color: var(--body-color);
+        box-shadow: 0 2px 16px var(--container-color);
+    }
+    .home h1,
+    .about h1{
+        font-size: 2.5rem;
+    }
+    .home img,
+    .about img{
+        height: 250px;
+    }
+    .home .branch-1{
+        width: 35px;
+        height: 35px;
+        top: 8.5rem;
+        left: 4rem;
+    }
+    .home .branch-2{
+        bottom: 200px;
+    }
+    .about .branch-1{
+        top: 17rem;
+        right: 2.5rem;
+    }
+    .about .branch-2{
+        bottom: 260px;
+    }
+    .join .container{
+        border-radius: 15px;
+    }
+    .join p,
+    .join form{
+        background-color: transparent;
+        width: 100%;
+    }
+    .join input,
+    .join .btn{
+        padding: .5rem;
+        width: 85%;
+    }
+    .join .leaf-1{
+        left: 4rem;
+    }
+    .join .leaf-2{
+        right: 4rem;
+    }
+    footer .branch-1{
+        bottom: 5.5rem;
+        right: 5rem;
+    }
+    footer .branch-2{
+        top:1rem;
+    }
+    footer .branch-3{
+        width: 100px;
+        height: 100px;
+        left: -3rem;
+        bottom: 0rem;
+    }
+}
+/* --- Small & Meduid device --- */
+@media screen and ( 577px <= width <= 991px) {
+    .navbar-nav{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        transition: .3s;
+        background-color: var(--body-color);
+        box-shadow: 0 2px 16px var(--container-color);
+    }
+    .home h1{
+        font-size: 3rem;
+    }
+    .home img{
+        height: 280px;
+    }
+    .home .branch-1{
+        top: 9.5rem;
+        left: 16rem;
+    }
+    .home .branch-2{
+        top: 1.5rem;
+    }
+    .about img{
+        height: 250PX;
+    }
+    .about h1{
+        font-size: 2.5rem;
+    }
+    .about p{
+        font-size: 0.8rem;
+    }
+    .about .branch-1{
+        right: 7rem;
+    }
+    .about .branch-2{
+        bottom: 1rem;
+    }
+    .join p{
+        width: 50%;
+    }
+    .join form{
+        width: 85%;
+    }
+    .join .leaf-1{
+        left: 8rem;
+    }
+    .join .leaf-2{
+        right: 8rem;
+    }
+    footer .branch-1{
+        bottom: 8rem;
+        right: 12rem;
+    }
+    footer .branch-3{
+        left: 5rem;
+    }
+}
