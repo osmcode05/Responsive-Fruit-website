@@ -9,7 +9,7 @@
     <!--==================== bootstrap css file ====================-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--==================== css file ====================-->
-    <link rel="stylesheet" href="css/Fruit.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--==================== remixicon link cdn ====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -49,14 +49,16 @@
           <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
              <!--==================== HOME ====================-->
              <section class="home position-relative overflow-hidden" id="home">
-                <div class="container d-flex flex-md-row flex-column pb-4 pt-4 row-gap-3 text-md-start text-center">
-                    <div class="col-lg-5 col-md-6 col-12">
-                        <h1>Enjoy The <br>Best Fresh <br>Fruits</h1>
-                        <p class="mt-4 mb-4 pe-lg-5 me-lg-4 pe-md-4">Enjoy the best organic fruits harvested with the best possible quality, obtaining unique and delicious flavors.</p>
-                        <a href="#" class="btn rounded-pill text-light">Order Fruit Now</a>
-                    </div>
-                    <div class="main col-md-7 col-md-6 col-12 d-flex">
-                        <img src="img/fruits-home.png" class="img-fluid m-auto" alt="Image">
+                <div class="container text-md-start text-center">
+                    <div class="row pt-4 pb-4 row-gap-3">
+                        <div class="col-md-6 col-12">
+                            <h1>Enjoy The <br>Best Fresh <br>Fruits</h1>
+                            <p class="mt-4 mb-4 pe-lg-5 me-lg-4 pe-md-4">Enjoy the best organic fruits harvested with the best possible quality, obtaining unique and delicious flavors.</p>
+                            <a href="#" class="btn rounded-pill text-light">Order Fruit Now</a>
+                        </div>
+                        <div class="main col-md-6 col-12 d-flex">
+                            <img src="img/fruits-home.png" class="img-fluid m-auto" alt="Image">
+                        </div>
                     </div>                    
                 </div>
                 <img src="img/fruit-home-branch-1.png" class="branch-1 position-absolute z-n1" alt="Image">
@@ -66,7 +68,7 @@
              <section class="enjoy">
                 <div class="container pt-5 pb-5 text-center">
                     <h1>Eat And Enjoy</h1>
-                    <div class="d-flex flex-wrap mt-5 row-gap-3">
+                    <div class="row mt-5 row-gap-3">
                         <article class="col-lg-4 col-md-6 col-12 d-flex">
                             <div class="box m-auto position-relative w-75">
                                 <div class="bg position-absolute h-100 w-100 top-50 start-50 z-n1"></div>
@@ -96,14 +98,16 @@
              </section>
              <!--==================== ABOUT US ====================-->
              <section class="about position-relative overflow-hidden" id="about">
-                <div class="container d-flex flex-md-row flex-column-reverse pb-5 pt-5 row-gap-3 text-md-start text-center">
-                    <div class="main col-md-6 col-12 d-flex">
-                        <img src="img/fruit-about.png" class="img-fluid m-auto" alt="Image">
-                    </div>   
-                    <div class="about_text col-md-6 col-12 pt-lg-5 ps-md-5">
-                        <h1>We Provide <br>Healthy Fruits</h1>
-                        <p class="mt-4 mb-4">The fruits come to us from the best harvests, planted with the care required to obtain the best quality fruit, enjoying its flavors and taking care of your health.</p>
-                        <a href="#" class="btn rounded-pill text-light">Know More</a>
+                <div class="container">
+                    <div class="row pb-5 pt-5 row-gap-3 text-md-start text-center">
+                        <div class="main col-md-6 col-12 d-flex">
+                            <img src="img/fruit-about.png" class="img-fluid m-auto" alt="Image">
+                        </div>   
+                        <div class="about_text col-md-6 col-12 pt-lg-5 ps-md-5">
+                            <h1>We Provide <br>Healthy Fruits</h1>
+                            <p class="mt-4 mb-4">The fruits come to us from the best harvests, planted with the care required to obtain the best quality fruit, enjoying its flavors and taking care of your health.</p>
+                            <a href="#" class="btn rounded-pill text-light">Know More</a>
+                        </div>
                     </div>                 
                 </div>
                 <img src="img/fruit-about-branch-1.png" class="branch-1 position-absolute z-n1" alt="Image">
@@ -113,7 +117,7 @@
              <section class="popular" id="popular">
                 <div class="container pt-5 pb-5 text-center">
                     <h1>Popular Fruits</h1>
-                    <div class="d-flex flex-wrap mt-5 row-gap-3">
+                    <div class="row mt-5 row-gap-3">
                         <article class="col-lg-4 col-md-6 col-12 d-flex">
                             <div class="box m-auto position-relative w-75 pb-5">
                                 <div class="bg position-absolute h-75 w-100 top-50 start-50 z-n1"></div>
@@ -190,10 +194,10 @@
                 </div>
              </section>
              <!--==================== JOIN US ====================-->
-             <section class="join position-relative p-3" id="join">
+             <section class="join position-relative" id="join">
                 <div class="container position-relative overflow-hidden pt-5 pb-5 mt-5 mb-5">
                     <div class="text-center">
-                        <h1 class="text-light">Receive The <br>Best Fruits </h1>
+                        <h1 class="text-light">Receive The <br>Best Fruits</h1>
                         <p class="m-auto mt-4 mb-4 text-light">Get up to date with the latest fruit harvests and information from us.</p>
                         <form class="m-auto d-sm-flex overflow-hidden rounded-pill">
                             <input type="email" class="border-0 ps-3 fw-bold flex-sm-grow-1 rounded-pill" placeholder="Enter your email">
@@ -208,48 +212,50 @@
             </main>
             <!--==================== FOOTER ====================-->
             <footer class="position-relative overflow-hidden">
-                <div class="container d-flex flex-wrap pt-5 pb-5">
-                    <div class="col-lg-4 col-12">
-                        <a href="#" class="text-decoration-none d-flex mb-2">
-                            <img src="img/fruit-logo.png" class="logo" alt="Image">
-                            <h2>Fruit</h2>
-                        </a>
-                        <p>Eat healthy, choose <br>the best fruits.</p>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <span class="fs-4 fw-bolder">Company</span>
-                        <ul class="list-unstyled lh-lg mt-2">
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <span class="fs-4 fw-bolder">News</span>
-                        <ul class="list-unstyled lh-lg mt-2">
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Testimonial</a></li>
-                            <li><a href="#">Videos</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <span class="fs-4 fw-bolder">Address</span>
-                        <ul class="list-unstyled mt-2">
-                            <li><p> ADOZ, 87274<br> 
-                                agadir, morrocco </p></li>
-                            <li class="mt-3"><p>9AM - 11PM</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <span class="fs-4 fw-bolder">Social Media</span>
-                        <ul class="list-unstyled d-flex gap-3 fs-3 mt-3">
-                            <li><a href="#" class="text-decoration-none"><i class="ri-twitter-fill"></i></a></li>
-                            <li><a href="#" class="text-decoration-none"><i class="ri-github-fill"></i></a></li>
-                            <li><a href="#" class="text-decoration-none"><i class="ri-linkedin-box-fill"></i></a></li>
-                        </ul>
+                <div class="container">
+                    <div class="row pt-5 pb-5 row-gap-3">
+                        <div class="col-lg-4 col-12">
+                            <a href="#" class="text-decoration-none d-flex mb-2">
+                                <img src="img/fruit-logo.png" class="logo" alt="Image">
+                                <h2>Fruit</h2>
+                            </a>
+                            <p>Eat healthy, choose <br>the best fruits.</p>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <span class="fs-4 fw-bolder">Company</span>
+                            <ul class="list-unstyled lh-lg mt-2">
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <span class="fs-4 fw-bolder">News</span>
+                            <ul class="list-unstyled lh-lg mt-2">
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Testimonial</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <span class="fs-4 fw-bolder">Address</span>
+                            <ul class="list-unstyled mt-2">
+                                <li><p> ADOZ, 87274<br> 
+                                    agadir, morrocco </p></li>
+                                <li class="mt-3"><p>9AM - 11PM</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <span class="fs-4 fw-bolder">Social Media</span>
+                            <ul class="list-unstyled d-flex gap-3 fs-3 mt-3">
+                                <li><a href="#" class="text-decoration-none"><i class="ri-twitter-fill"></i></a></li>
+                                <li><a href="#" class="text-decoration-none"><i class="ri-github-fill"></i></a></li>
+                                <li><a href="#" class="text-decoration-none"><i class="ri-linkedin-box-fill"></i></a></li>
+                            </ul>
+                        </div>
+                        <p class="text-center mt-4">&#169; All Rights Reserved By OUSSAMA</p>
                     </div>
                 </div>
-                <p class="text-center mt-4">&#169; All Rights Reserved By OUSSAMA</p>
                 <img src="img/fruit-footer-branch-1.png" class="branch-1 position-absolute z-n1"  alt="Image">
                 <img src="img/fruit-about-branch-2.png" class="branch-2 position-absolute z-n1"  alt="Image">
                 <img src="img/fruit-home-branch-2.png" class="branch-3 position-absolute z-n1"  alt="Image">
@@ -263,6 +269,6 @@
     <!--================= bootstrap js file =================-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--================== js file ==================-->
-    <script src="js/Fruit.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

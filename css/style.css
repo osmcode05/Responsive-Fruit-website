@@ -173,13 +173,13 @@ p{
 }
 .join .leaf-1{
     width: 70px;
-    top: 2rem;
+    top: -2rem;
     left: 15rem;
     transform: rotate(140deg);
 }
 .join .leaf-2{
     width: 70px;
-    bottom: 2rem;
+    bottom: -2rem;
     right: 15rem;
     transform: rotate(20deg);
 }
